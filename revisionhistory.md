@@ -2,14 +2,25 @@
 
 
 
+	3. Prerelease 1.0.0-alpha.11
+	muff1nOS, 11/2/21 14:03 UTC-08:00
+	Commit for Prerelease 1.0.0-alpha.11
+	Also:
+	> edited .gitconfig
+	> Changed LICENSE to make license appear on GitHub
+	> Added copyright and license notice at the bottom of the README.md
+		links to relevant places
+
+
+
 	2. Prerelease 1.0.0-alpha.10
-	muff1nOS, 10/31/21 22:32pm UTC-08:00
+	muff1nOS, 10/31/21 22:32 UTC-08:00
 	Added commit and revision history because it's nice to have one
 
 
 
 	1. Prerelease 1.0.0-alpha.10
-	muff1nOS, 10/31/21 22:24pm UTC-08:00
+	muff1nOS, 10/31/21 22:24 UTC-08:00
 	Initial commit for Prerelease 1.0.0-alpha.10
 
 
@@ -38,7 +49,6 @@ newer commit
 older commit
 older commit
 older commit
-
 ```
 
 Adding the following list would be more helpful in tracking an individual

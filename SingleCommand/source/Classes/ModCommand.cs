@@ -55,8 +55,6 @@ namespace muff1nOS.SingleCommand
 				// if command has no arguments or the "help" argument
 				if ((args[0] ?? "help") == "help")
 					this.HelpHandler(this.Monitor);
-
-				// if command is unknown
 				else
 				{
 					this.UnknownHandler(

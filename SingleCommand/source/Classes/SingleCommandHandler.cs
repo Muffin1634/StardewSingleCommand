@@ -85,7 +85,7 @@ namespace muff1nOS.SingleCommand
 		{
 			commandHelper.Add(
 				this.CommandInvocation,
-				$"Command for {this.ModName}. Type '{this.ModName} help' for more info.",
+				$"Command for {this.ModName}. Type '{this.CommandInvocation} help' for more info.",
 				(_, args) => this.Handler(args)
 			);
 		}
@@ -110,6 +110,6 @@ namespace muff1nOS.SingleCommand
 		/// <param name="faultyArg">Unknown argument that caused this method to be called.</param>
 		/// <remarks>This UnknownHandler is a bit different from the others, in that it knows it handles the base command and can do less work.</remarks>
 		protected virtual void UnknownHandler(IMonitor monitor, string faultyArg)
-			{ monitor.Log($"Unknown command '{this.ModName} {faultyArg}'. Use '{this.ModName} help' for how to use this command.", LogLevel.Debug); }
+			{ monitor.Log($"Unknown command '{this.CommandInvocation} {faultyArg}'. Use '{this.CommandInvocation} help' for how to use this command.", LogLevel.Debug); }
 	}
 }

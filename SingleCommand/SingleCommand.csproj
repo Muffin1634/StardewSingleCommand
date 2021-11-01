@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<!-- package metadata -->
 		<PackageId>muff1nOS.Stardew.SingleCommand</PackageId>
-		<PackageVersion>1.0.0-alpha.10</PackageVersion>
+		<PackageVersion>1.0.0-alpha.11</PackageVersion>
 		<PackageIcon></PackageIcon>
 
 		<!-- author and summary -->
@@ -21,7 +21,7 @@
 
 		<!-- copyright and license -->
 		<Copyright>Copyright (c) 2021 muff1nOS</Copyright>
-		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 
 		<!-- source code links -->
 		<PackageProjectUrl>https://github.com/Muffin1634/StardewSingleCommand/wiki</PackageProjectUrl>
@@ -49,7 +49,7 @@
 
 	<!-- Include LICENSE.md in the package -->
 	<ItemGroup>
-		<None Include="../LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="../LICENSE" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 </Project>
