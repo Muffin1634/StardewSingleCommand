@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- project -->
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+		<RootNamespace>muff1nOS.SingleCommand</RootNamespace>
+	</PropertyGroup>
+
+	<!-- chicken nuggies meal metadata -->
+	<PropertyGroup>
+		<!-- package metadata -->
+		<PackageId>muff1nOS.Stardew.SingleCommand</PackageId>
+		<PackageVersion>1.0.0-alpha.10</PackageVersion>
+		<PackageIcon></PackageIcon>
+
+		<!-- author and summary -->
+		<Authors>muff1nOS</Authors>
+		<Description>
+			Don't clog the SMAPI /help command output with a bunch of prefixed commands. Put all of your mod's commands into one with this Pathoschild-inspired NuGet package for Stardew Valley modding!
+		</Description>
+
+		<!-- copyright and license -->
+		<Copyright>Copyright (c) 2021 muff1nOS</Copyright>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+
+		<!-- source code links -->
+		<PackageProjectUrl>https://github.com/Muffin1634/StardewSingleCommand/wiki</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Muffin1634/StardewSingleCommand</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+
+		<!-- tags -->
+		<PackageTags>Stardew;Valley;Stardew Valley;SMAPI</PackageTags>
+
+		<!-- release notes -->
+		<PackageReleaseNotes>https://github.com/Muffin1634/StardewSingleCommand</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<!-- pathos' ModBuildConfig options -->
+	<PropertyGroup>
+		<EnableModDeploy>false</EnableModDeploy>
+		<EnableModZip>false</EnableModZip>
+	</PropertyGroup>
+
+	<!-- head noggin package dependencies -->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0.0" />
+		<PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.0-beta.20210916" />
+	</ItemGroup>
+
+	<!-- Include LICENSE.md in the package -->
+	<ItemGroup>
+		<None Include="../LICENSE.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
