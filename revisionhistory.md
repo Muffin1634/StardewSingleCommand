@@ -2,6 +2,13 @@
 
 
 
+	5. Prerelease 1.0.0-alpha.13
+	muff1nOS, 11/02/21 20:19 UTC-08:00
+	Commit for Prerelease 1.0.0-alpha.13
+	Made SingleCommandHandler.CommandList settable outside of constructor
+
+
+
 	4. Prerelease 1.0.0-alpha.12
 	muff1nOS, 11/02/21 20:06 UTC-08:00
 	Commit for Prerelease 1.0.0-alpha.12

@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<!-- package metadata -->
 		<PackageId>muff1nOS.Stardew.SingleCommand</PackageId>
-		<PackageVersion>1.0.0-alpha.12</PackageVersion>
+		<PackageVersion>1.0.0-alpha.13</PackageVersion>
 		<PackageIcon></PackageIcon>
 
 		<!-- author and summary -->
