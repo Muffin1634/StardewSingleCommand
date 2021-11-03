@@ -2,8 +2,18 @@
 
 
 
+	4. Prerelease 1.0.0-alpha.12
+	muff1nOS, 11/02/21 20:06 UTC-08:00
+	Commit for Prerelease 1.0.0-alpha.12
+	According to SemVer 2.0.0 I must make an entire new version if I change one
+		word as I have done here (Classes/SingleCommandHandler.cs(15,2),
+		private -> protected)
+		Isn't that amazing
+
+
+
 	3. Prerelease 1.0.0-alpha.11
-	muff1nOS, 11/2/21 14:03 UTC-08:00
+	muff1nOS, 11/02/21 14:03 UTC-08:00
 	Commit for Prerelease 1.0.0-alpha.11
 	Also:
 	> edited .gitconfig

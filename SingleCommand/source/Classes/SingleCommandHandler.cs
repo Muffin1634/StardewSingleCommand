@@ -12,7 +12,7 @@ namespace muff1nOS.SingleCommand
 		private IMonitor Monitor { get; }
 
 		/// <summary>List of all of your IModCommands.</summary>
-		private IModCommand[] CommandList { get; }
+		protected IModCommand[] CommandList { get; }
 
 		/* Properties */
 
