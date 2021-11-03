@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+
 using StardewModdingAPI;
 
 namespace muff1nOS.SingleCommand
@@ -45,13 +47,12 @@ namespace muff1nOS.SingleCommand
 		}
 
 		/// <summary>Base command handler.</summary>
-		public virtual bool Handler(string[] args)
+		public virtual void Handler(string[] args)
 		{
 			if ((args.FirstOrDefault<string>() ?? "help") == "help")
 			{
 				// if no command specified or is the "help" command
 				this.HelpHandler(this.Monitor);
-				return true;
 			}
 			else
 			{
@@ -62,10 +63,9 @@ namespace muff1nOS.SingleCommand
 				{
 					// if it is a normal subcommand
 					modCommand.Handler(
-						new string[] {this.ModName},
+						new string[] {this.CommandInvocation},
 						arguments
 					);
-					return true;
 				}
 				else
 				{
@@ -74,7 +74,6 @@ namespace muff1nOS.SingleCommand
 						this.Monitor,
 						command
 					);
-					return false;
 				}
 			}
 		}

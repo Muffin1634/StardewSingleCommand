@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 
 using StardewModdingAPI;
@@ -54,12 +55,12 @@ namespace muff1nOS.SingleCommand
 			{
 				// if command has no arguments or the "help" argument
 				if ((args[0] ?? "help") == "help")
-					this.HelpHandler(this.Monitor);
+					{ this.HelpHandler(this.Monitor); }
 				else
 				{
 					this.UnknownHandler(
 						this.Monitor,
-						parents.Concat(args).ToArray()
+						parents.Concat<String>(new string[] {args[0]}).ToArray()
 					);
 				}
 			}
@@ -81,19 +82,11 @@ namespace muff1nOS.SingleCommand
 		/// <inheritdoc muff1nOS.SingleCommand.SingleCommandHandler.UnknownHandler />
 		protected virtual void UnknownHandler(IMonitor monitor, string[] cmd)
 		{
-			string message = "Unknown command '";
+			string fullCommand = String.Join(' ', cmd);
+			Array.Resize<string>(ref cmd, cmd.Length - 1);
+			string notFullCommand = String.Join(' ', cmd);
 
-			for (int i = 0; i < cmd.Length; ++i)
-				message += cmd[i] + ' ';
-
-			message += "'. Try '";
-
-			for (int i = 0; i < (cmd.Length - 1); ++i)
-				message += cmd[i] + ' ';
-
-			message += "help' for how to use this command.";
-
-			monitor.Log(message, LogLevel.Debug);
+			monitor.Log($"Unknown command '{fullCommand}', Try '{notFullCommand} help' for how to use this command.", LogLevel.Debug);
 		}
 	}
 }
