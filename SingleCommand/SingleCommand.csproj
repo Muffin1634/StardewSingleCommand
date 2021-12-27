@@ -10,7 +10,7 @@
 	<PropertyGroup>
 		<!-- package metadata -->
 		<PackageId>muff1nOS.Stardew.SingleCommand</PackageId>
-		<PackageVersion>1.0.0-alpha.14</PackageVersion>
+		<PackageVersion>1.0.0-alpha.15</PackageVersion>
 		<PackageIcon></PackageIcon>
 
 		<!-- author and summary -->
@@ -32,7 +32,7 @@
 		<PackageTags>Stardew;Valley;Stardew Valley;SMAPI</PackageTags>
 
 		<!-- release notes -->
-		<PackageReleaseNotes>https://github.com/Muffin1634/StardewSingleCommand</PackageReleaseNotes>
+		<PackageReleaseNotes>https://github.com/Muffin1634/StardewSingleCommand/blob/main/revisionhistory.md</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<!-- pathos' ModBuildConfig options -->
@@ -44,7 +44,7 @@
 	<!-- head noggin package dependencies -->
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0.0" />
-		<PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.0-beta.20210916" />
+		<PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.0.0" />
 	</ItemGroup>
 
 	<!-- Include LICENSE.md in the package -->

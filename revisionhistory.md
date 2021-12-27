@@ -2,6 +2,13 @@
 
 
 
+	7. Prerelease 1.0.0-alpha.15
+	muff1nOS, 12/27/21 14:19 UTC-08:00
+	Update package dependencies
+	> Pathoschild.Stardew.ModBuildConfig: 4.0.0-beta.20210916 -> 4.0.0
+
+
+
 	6. Prerelease 1.0.0-alpha.14
 	muff1nOS, 11/03/21 10:32 UTC-08:00
 	Commit for Prerelease 1.0.0-alpha.14
